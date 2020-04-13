@@ -13,15 +13,15 @@ to use it.
 
 This starter follows the Create React App layout, in general, but adds the following `src` subdirectories by default:
 
-### `[components](./src/components)`
+### [`components`](./src/components)
 
 This is where your react components live.
 
-### `[stores](./src/stores)`
+### [`stores`](./src/stores)
 
 This is where your mobx state lives
 
-### `[themes](./src/themes)`
+### [`themes`](./src/themes)
 
 This is where your material UI themes live
 
