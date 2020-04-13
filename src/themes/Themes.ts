@@ -2,6 +2,7 @@ import Blue from "./Blue"
 import Red from "./Red"
 import {createMuiTheme} from "@material-ui/core";
 
+// A map of all the available themes that can be referenced from anywhere.
 const Themes = Object.freeze({
     blue: createMuiTheme(Blue),
     red: createMuiTheme(Red)

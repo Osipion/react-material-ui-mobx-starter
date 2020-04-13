@@ -7,17 +7,21 @@ import {withStyles, WithStyles} from '@material-ui/styles';
 import {Theme} from '@material-ui/core';
 import {observer} from "mobx-react";
 
+// the styles that can be applied to ${NAME}
 const styles = (t: Theme) => ({
+    // the root (backing) element
     root: {
         height: "100%",
         width: "100%"
     }
 });
 
+// additional properties for ${NAME}
 export interface ${NAME}Props extends WithStyles<typeof styles> {
 
 }
 
+// the ${NAME} functional component that observes mobx
 const ${NAME} = observer((p: ${NAME}Props) => {
     const {classes} = p;
     return (
@@ -26,4 +30,5 @@ const ${NAME} = observer((p: ${NAME}Props) => {
     )
 });
 
+// the ${NAME} functional component with styles attached.
 export default withStyles(styles)($NAME);
