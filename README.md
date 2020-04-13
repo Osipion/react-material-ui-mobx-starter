@@ -6,22 +6,22 @@ A sample project bringing mobx, Material UI and Typescript together within the [
 
 This repository has a [component template](./jetbrains-component-template.tsx) that can be added to Jetbrains IDEs
 (e.g. GoLand, Intellij, Webstorm, RubyMine, CLion, Pycharm etc.) that scaffolds a functional component that observes
-mobx changes and is styles with Material UI. Copy and paste the contents of the file into the Jetbrains template editor
+mobx changes and is styled with Material UI. Copy and paste the contents of the file into the Jetbrains template editor
 to use it.
 
 ## Layout
 
 This starter follows the Create React App layout, in general, but adds the following `src` subdirectories by default:
 
-### `components`
+### `[components](./src/components)`
 
 This is where your react components live.
 
-### `stores`
+### `[stores](./src/stores)`
 
 This is where your mobx state lives
 
-### `themes`
+### `[themes](./src/themes)`
 
 This is where your material UI themes live
 
