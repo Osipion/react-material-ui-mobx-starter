@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {ThemeProvider} from "@material-ui/styles";
+import {usePreferences} from "./stores/PreferenceStore";
+import Themes from "./themes/Themes";
+import MainView from "./components/MainView";
+import {observer} from "mobx-react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = observer(() => {
+
+    const preferenceStore = usePreferences();
+
+    return (
+        <ThemeProvider theme={Themes[preferenceStore.preferredTheme]}>
+            <MainView text="Hello from react-material-mobx-starter"/>
+        </ThemeProvider>
+    );
+});
 
 export default App;
